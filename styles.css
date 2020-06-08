@@ -1,0 +1,117 @@
+body { 
+    padding: 0; 
+    margin: 0; 
+    overflow: hidden;
+    background-color: black;
+} 
+    
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+svg { 
+    outline: none !important; 
+    position: fixed; 
+    top:0; 
+    left:0; 
+    height:100%; 
+    width:100%;
+    z-index: 1;
+    -webkit-user-select: none !important;  /* Chrome 49+ */
+    -moz-user-select: none !important;     /* Firefox 43+ */
+    -ms-user-select: none !important;      /* No support yet */
+    user-select: none !important;  
+}
+/* 
+text {
+    z-index: 5;
+}
+
+canvas {
+    z-index: 1;
+}
+
+input {
+    z-index: 5;
+} */
+
+.tippy-box[data-theme~='noPointer'] {
+    z-index : 0;
+    pointer-events: none;
+    -webkit-user-select: none !important;  /* Chrome 49+ */
+    -moz-user-select: none !important;     /* Firefox 43+ */
+    -ms-user-select: none !important;      /* No support yet */
+    user-select: none !important;  
+  }
+
+/* .button-layer {
+    position : absolute;
+} */
+
+.info-button  {
+    position : absolute;
+    height: 50;
+    width: 50;
+    z-index : 500;
+    background-image: url(icons/info-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-origin: border-box;
+    background-position: center;
+}
+
+.visible-button {
+    position : absolute;
+    height: 50;
+    width: 50;
+    z-index : 500;
+    background-image: url(icons/button-filled.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-origin: border-box;
+    background-position: center;
+}
+
+.invisible-button {
+    position : absolute;
+    height: 50;
+    width: 50;
+    z-index : 500;
+    background-image: url(icons/button-unfilled.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-origin: border-box;
+    background-position: center;
+}
+
+.random-button {
+    position : absolute;
+    height: 30;
+    width: 50;
+    z-index : 500;
+    background-image: url(icons/random.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-origin: border-box;
+    background-position: center;
+}
+
+.reset-button {
+    position : absolute;
+    height: 30;
+    width: 50;
+    z-index : 500;
+    background-image: url(icons/reset.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-origin: border-box;
+    background-position: center;
+}
+
+.modal {
+    display: none;
+}
+  
+.modal.is-open {
+    display: block;
+}
